@@ -8,7 +8,6 @@ PortSwigger Web Security Academy'nin "Web LLM Attacks" lab çözümlerim. Her la
  Indirect prompt injection 
  Exploiting insecure output handling in LLMs 
 
-Detaylı çözümler ilgili dosyalarda, `screenshots/` içinde kanıtlarıyla.
 
 ## Yaklaşım
 
