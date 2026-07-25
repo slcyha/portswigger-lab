@@ -12,6 +12,8 @@ Ekran görüntüsü: Fonksiyon keşfi — LLM'in eriştiği fonksiyonları liste
 
 
 
+
+
 Çözüm — SQL Injection (debug_sql)
 
 Bir oturumda LLM debug_sql fonksiyonuna erişimi olduğunu ve ham SQL çalıştırabildiğini bildirdi. Veritabanını sorgulayıp carlos'u sildim:
